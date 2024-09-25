@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html2509</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .menu__list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .menu__item {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .menu__link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu__link:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            animation: pulse 2s infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        .lights {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+            opacity: 5; 
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shimmer {
+            0% { opacity: 0.5; }
+            50% { opacity: 0.7; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--active"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Sobre</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contato</a></li>
+        </ul>
+    </nav>
+    <h1>Xtrem🚂</h1>
+    <div class="image-container">
+        <div class="lights"></div>
+        <img src="https://www.motoo.com.br/fotos/2023/6/960_720/honda_xre-300_2023_1_20062023_54862_960_720.jpg" alt="Moto em movimento">
+    </div>
+    <p>Descubra mais sobre o mundo das motos no site abaixo:</p>
+        <a href="https://www.honda.com.br/motos/adventure/trail/sahara-300" target="_blank">Visite o site da Honda:</a> 
+    </p>
+</body>
+</html>
